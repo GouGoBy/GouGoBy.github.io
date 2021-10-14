@@ -38,6 +38,17 @@ Version：20200708
             <p>LIFE IS A STORY.</p>
             <p>So, enjoy life!</p>
             <p>Whatever you do, you hold on to that foolishly hopeful smile.</p>
+            <p id="hitokoto"><a href="#" id="hitokoto_text">:D 获取中...</a></p>
+<script>
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      const hitokoto = document.getElementById('hitokoto_text')
+      hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+      hitokoto.innerText = data.hitokoto
+    })
+    .catch(console.error)
+</script>
             
         </div>
         <div class="footer">
