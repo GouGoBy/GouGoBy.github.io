@@ -1,0 +1,16 @@
+{(Archives)}
+<div class='posts'>
+  <h3 class='paneltitle'>Archives</h3>
+  <hr>
+  {[archives]}
+  <hr></div>
+  {(PageType)}{[pagetype]}{(PageTypeEnd)}
+  <!--[PageType]{[pagetype]}[PageTypeEnd]-->
+  {(ArchivesEnd)}
+{(ArchiveTemplate)}
+<h2>{[archiveyear]}</h2>
+<ul>{[archiveitems]}</ul>
+{(ArchiveTemplateEnd)}
+{(ArchiveItemTemplate)}
+<li><a class='taglink archivelink' href='{[archiveitemlink]}'>{[archiveitemtitle]}</a></li><!--日期：{[archiveitemdate]}-->
+{(ArchiveItemTemplateEnd)}
